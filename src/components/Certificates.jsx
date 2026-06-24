@@ -35,12 +35,12 @@ function Certificates() {
             📅 2025
           </p>
 
-          <a
-            href="/ai-certificate.pdf"
+            <a
+            href="/certificate.png"
             target="_blank"
             rel="noreferrer"
             className="certificate-btn"
-          >
+            >
             View Certificate
           </a>
 
