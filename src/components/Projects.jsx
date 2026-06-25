@@ -14,7 +14,14 @@ function Projects() {
             and responsive UI.
           </p>
 
-          <button>View Project</button>
+          <a
+            href="https://portfolio-website-olive-mu-30.vercel.app"
+            target="_blank"
+            rel="noreferrer"
+            className="project-btn"
+          >
+            View Project
+          </a>
         </div>
 
         <div className="project-card">
@@ -26,7 +33,14 @@ function Projects() {
             and improving patient experience.
           </p>
 
-          <button>View Project</button>
+          <a
+            href="https://portfolio-website-olive-mu-30.vercel.app"
+            target="_blank"
+            rel="noreferrer"
+            className="project-btn"
+          >
+            View Project
+          </a>
         </div>
 
         <div className="project-card">
@@ -38,7 +52,14 @@ function Projects() {
             with a modern design.
           </p>
 
-          <button>View Project</button>
+          <a
+            href="https://portfolio-website-olive-mu-30.vercel.app"
+            target="_blank"
+            rel="noreferrer"
+            className="project-btn"
+          >
+            View Project
+          </a>
         </div>
 
       </div>
