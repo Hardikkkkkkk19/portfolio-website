@@ -549,3 +549,200 @@ body {
 .skill-card:hover {
   box-shadow: 0 0 30px rgba(56, 189, 248, 0.15);
 }
+/* ================= MODERN EFFECTS ================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 90px;
+}
+
+.hero,
+.about,
+.skills,
+.projects,
+.achievements,
+.certificates,
+.contact {
+  animation: fadeUp 0.8s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Cards */
+
+.about-card,
+.skill-card,
+.project-card,
+.achievement-card,
+.certificate-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.about-card::before,
+.skill-card::before,
+.project-card::before,
+.achievement-card::before,
+.certificate-card::before {
+  content: "";
+
+  position: absolute;
+
+  left: -100%;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(56,189,248,.12),
+    transparent
+  );
+
+  transition: .7s;
+}
+
+.about-card:hover::before,
+.skill-card:hover::before,
+.project-card:hover::before,
+.achievement-card:hover::before,
+.certificate-card:hover::before {
+  left: 100%;
+}
+
+.about-card:hover,
+.skill-card:hover,
+.project-card:hover,
+.achievement-card:hover,
+.certificate-card:hover {
+  transform: translateY(-10px);
+  border-color: #38bdf8;
+  box-shadow: 0 15px 35px rgba(56,189,248,.18);
+}
+
+/* Buttons */
+
+.resume-btn,
+.contact-btn,
+.project-btn,
+.certificate-btn,
+.contact-container button {
+  transition: .3s;
+}
+
+.resume-btn:hover,
+.project-btn:hover,
+.certificate-btn:hover,
+.contact-container button:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(56,189,248,.35);
+}
+
+.contact-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(56,189,248,.25);
+}
+
+/* Skill Cards */
+
+.skill-card {
+  cursor: pointer;
+}
+
+.skill-card:hover {
+  background: #162238;
+}
+
+/* Section Title */
+
+.section-title {
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section-title::after {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  bottom: -12px;
+
+  transform: translateX(-50%);
+
+  width: 70px;
+  height: 4px;
+
+  border-radius: 20px;
+
+  background: #38bdf8;
+}
+
+/* Profile */
+
+.profile-image {
+  transition: .5s;
+}
+
+.profile-image:hover {
+  transform: scale(1.05) rotate(2deg);
+  box-shadow: 0 0 45px rgba(56,189,248,.55);
+}
+
+/* Inputs */
+
+.contact-container input,
+.contact-container textarea {
+  transition: .3s;
+}
+
+.contact-container input:hover,
+.contact-container textarea:hover {
+  border-color: #38bdf8;
+}
+
+/* Navbar */
+
+.navbar {
+  transition: .3s;
+}
+
+.nav-links a {
+  position: relative;
+}
+
+.nav-links a::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: -6px;
+
+  width: 0;
+  height: 2px;
+
+  background: #38bdf8;
+
+  transition: .3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
